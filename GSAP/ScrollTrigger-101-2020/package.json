@@ -1,0 +1,23 @@
+{
+  "name": "scrollTrigger-101-2020",
+  "version": "1.0.0",
+  "description": "[ScrollTrigger 101](https://ihatetomatoes.net/store/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ihatetomatoes/scrollTrigger-101-2020.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ihatetomatoes/scrollTrigger-101-2020/issues"
+  },
+  "homepage": "https://github.com/Ihatetomatoes/scrollTrigger-101-2020#readme",
+  "dependencies": {
+    "gsap": "^3.5.0"
+  }
+}
