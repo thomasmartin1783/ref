@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<h1>More Elements!</h1>
+
+	<hr>
+
+	<main>
+	<!-- <div class="equations">
+			a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>
+	</div>
+ -->
+
+
+	<!-- <video width='700' muted controls autoplay loop >
+		<source src="resources/Pexels Videos 4631.mp4">
+	</video> -->
+
+
+	<!-- <video 
+	src="resources/Pexels Videos 4631.mp4" 
+	poster="https://images.pexels.com/photos/3876435/pexels-photo-3876435.jpeg?cs=srgb&dl=aerial-view-of-bushes-on-sand-field-3876435.jpg&fm=jpg" width="300" controls>
+
+	</video> -->
+
+
+	<!-- <img src="https://images.pexels.com/photos/3876435/pexels-photo-3876435.jpeg?cs=srgb&dl=aerial-view-of-bushes-on-sand-field-3876435.jpg&fm=jpg" alt="image"> -->
+
+
+
+	<table>
+		<thead>
+			<td colspan=2></td>
+			<td>Name</td>
+			<td>Mass</td>
+			<td>Density</td>
+			<td>Diameter</td>
+			<td>Gravity</td>
+		</thead>
+		<tbody>
+			
+					<tr>
+						<td colspan=2 rowspan=5>Terrestrial</td>
+					</tr>
+					<tr id="even">
+						<td >Mercury</td>
+						<td>35</td>
+						<td>.3221</td>
+						<td>532.5</td>
+						<td>21.2</td>
+					</tr>
+					<tr id="odd">
+						<td >Venus</td>
+						<td>5.2</td>
+						<td>3.22</td>
+						<td>6.2</td>
+						<td>3232.3</td>
+					</tr>
+					<tr id="even">
+						<td >Earth</td>
+						<td>2.3</td>
+						<td>65.3</td>
+						<td>65.3</td>
+						<td>65.11</td>
+					</tr>
+					<tr id="odd">
+						<td>Mars</td>
+						<td>131.321</td>
+						<td>232.3</td>
+						<td>65.3</td>
+						<td>323.3</td>
+					</tr>
+			
+			
+					<tr>
+						<td rowspan=7>Jovian</td>
+					</tr>
+			
+					<tr>
+						<td rowspan=3>Gas</td>
+					</tr>
+					<tr id="even">
+						<td >Jupiter</td>
+						<td>131.321</td>
+						<td>232.3</td>
+						<td>65.3</td>
+						<td>323.3</td>
+					</tr>
+					<tr id="odd">
+						<td>Saturn</td>
+						<td>131.321</td>
+						<td>232.3</td>
+						<td>65.3</td>
+						<td>323.3</td>
+					</tr>
+			
+					<tr>
+						<td rowspan=3>Ice</td>
+					</tr>
+					<tr id="even">
+						<td>Uranus</td>
+						<td>131.321</td>
+						<td>232.3</td>
+						<td>65.3</td>
+						<td>323.3</td>
+					</tr>
+					<tr id="odd">
+						<td>Neptune</td>
+						<td>131.321</td>
+						<td>232.3</td>
+						<td>65.3</td>
+						<td>323.3</td>
+					</tr>
+			
+					<tr id="even">
+						<td colspan=2>Dwarf</td>
+						<td>Pluto</td>
+						<td>131.321</td>
+						<td>232.3</td>
+						<td>65.3</td>
+						<td>323.3</td>
+					</tr>
+		</tbody>
+	</table>
+
+	</main>
+
+
+
+
+	<div class="forms">
+	<h1 id="forms">Forms Intro</h1>
+	<form action="">
+
+		<label for="username"> UserName :   
+			<input type="text" name="user" id="username" value="USERNAME" placeholder="usrName" required >
+		</label>
+
+     <p id="password">
+		<label> PassWord :
+			<input type="password" name="pass"  placeholder="PASSWORD" required minlength="8">
+		</label>
+	 </p>
+	 
+
+	 <h4>Email : </h3>
+	 <input type="email" placeholder="Email" required>
+
+
+	 <p>
+		 <label> Age :
+			 <input type="number" min=10 max=70 step=1>
+		 </label>
+	 </p>
+
+	 <p id="colors"> Your Favorite Color : 
+	
+		    RED
+			<input type="checkbox" id="red" name="color" value="red" >
+			Blue
+			<input type="checkbox" name="color" id="blue" value="blue">
+			YELLOW
+			<input type="checkbox" name="color" id="yellow" value="yellow">
+		
+	</p>
+
+
+	<p>Do You Like Rain?
+		YES	
+		<input type="radio" name="rain" id="likeRain" value="yes">	
+		NO	
+		<input type="radio" name="rain" id="likeRain" value="no">	
+	</p>
+
+
+	<p>Tell About Yourself:
+		<textarea name="bio" id="bio" cols="30" rows="10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, excepturi!
+		</textarea>
+	</p>
+
+
+	<p>Color Input:
+		<input type="color" name="color_inp" id="">
+	</p>
+
+	<button>Submit</button>
+
+	</form>
+
+
+
+	<h2>Google Search</h2>
+		<form action="https://www.google.com/search">
+			<div>
+				<label for="search">Search</label>
+				<input type="text" name="q" id="search" /0>	
+			</div>
+	
+			<input type="submit" value="Search"/>
+
+	</form>
+
+	
+	<h2>Reddit Search</h2>
+	<form action="https://www.reddit.com/search/">
+		<div>
+			<label for="search">Search</label>
+			<input type="text" name="q" id="search" /0>	
+		</div>
+
+		<div>
+			<label for="sort">Sort By:</label>
+			<select name="sort" id="sort">
+				<option value="top">Top</option>
+				<option value="new">New</option>
+				<option value="relevance">Relevance</option>
+			</select>
+		</div>
+
+
+		<input type="submit" value="Search"/>
+	</form>
+
+
+    </div>
+	
+    
+</body>
+</html>

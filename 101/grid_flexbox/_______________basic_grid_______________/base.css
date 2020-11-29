@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+
+body {
+	background-color: #0a0a1a;
+	color: #fff;
+	font-family:  'Noto Sans', sans-serif;
+
+}
+
+.card {
+
+	/* individual item(card) layout style */
+	display: flex;
+	flex-direction: column;
+
+	/* positioning */
+	justify-content: center;
+	align-items: center;
+
+	/* visual */
+	background-color: #353535;
+	color: #fff;
+
+	/* individual item sizing */
+	height: 100%;
+	width: 100%;
+	border-radius: 5px;
+	overflow: hidden;
+
+	/* background image positioning */
+	background-size: cover;
+    background-position: center;
+	background-repeat: no-repeat;
+	
+
+	/* animation transition */
+	transition: all 500ms;
+
+
+
+	/* initial box */
+	box-shadow: 
+	 rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem,
+	 rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+
+	
+}
+
+
+
+.card:hover {
+	box-shadow: 
+	 rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em,
+	 rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+	transform: translateY(-3px) scale(1.1);
+	
+}
+
+

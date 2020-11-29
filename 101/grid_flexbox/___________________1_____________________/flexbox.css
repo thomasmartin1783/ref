@@ -1,0 +1,158 @@
+/* 
+=====================================================
+                   NOTES
+=====================================================
+
+In flexbox row(default) mode the main axis X
+In column mode the main axis Y
+
+justify works on main (row_mode --> X horizontal)
+align works on cross (row_mode --> Y vertical)
+
+column_mode   main -->  Y  vertical (justify)
+			  cross --> X  horizontal (align)
+			  
+
+STRETCH is default
+
+
+
+
+
+Grow acts when the items don't completely fill the container(window becomes bigger wider  or the items becomes bigger than the width they are set to)
+
+
+Shrink acts when the item becomes smaller than the width(threshold) they are set to
+
+.flexbox-item {
+	width: 15% 25% ;
+
+	or use
+
+	flex-basis: 15% 25%;
+}
+
+
+=====================================================
+ */
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background-color: rgb(12,11,26);
+}
+
+
+
+.flexbox-container {
+	border: 2px solid gray;
+	margin: 20px;
+
+	display: flex;
+
+	/* flex-direction:  */
+	/* row (default) */
+	/* column;	 */
+
+	/* flex-wrap:  */
+	/* squishing everything together in the box not flexible default */
+	/* nowrap;  */
+	/* flexible box  */
+	/* wrap; */
+
+
+/* ============================================= */
+	/* flex-flow: column wrap; */
+/* ============================================= */
+
+
+	/* turn wrap on */
+	height: 95vh;
+	/* align-content: center;   */
+	 
+	
+
+
+	/* justify-content:  */
+	/* flex-end; */
+	/* center; */
+	/* flex-start; */
+	/* space-around; */
+	/* space-between; */
+	/* space-evenly; */
+
+	/* align-items:  */
+	/* flex-start; */
+	/* flex-end; */
+	/* center; */
+
+
+
+}
+
+.flexbox-item {
+	/* width: 15%; */
+	flex-basis: 25%;
+
+	background-color: gray;
+	border: 2px solid blue;
+	color: white;
+	font-size: 2em;
+	padding: 20px;
+	margin: 10px;
+
+	/* flexbox inside flexbox */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.item-1 {
+	min-height: 50px;
+	/* flex-grow: 1;
+	flex-shrink: 1; */
+
+	flex:
+	/* grow shrink basis */
+	/* grow/shrink after 15% threshold */
+	1 1 25%;
+
+	/* align-self: flex-start; */
+
+
+	order: 2;
+	
+}
+
+.item-2 {
+	min-height: 100px;
+	/* flex-grow: 6;
+	flex-shrink: 6; */
+
+	flex: 6 6 25%;
+
+	/* align-self: center; */
+
+
+	order: 1;
+}
+
+.item-3 {
+	min-height: 250px;
+	/* flex-grow: 1;
+	flex-shrink: 1; */
+
+	flex: 1 1 25%;
+
+	/* turn flexbox-container height on */
+	/* align-self: flex-end; */
+
+
+	order: 3;
+}

@@ -1,0 +1,180 @@
+.main-header {
+	position: fixed;
+	
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	height: 70px;
+	width: 100vw;
+
+	padding: 0 10vw;
+	color: #0a0a1a;  //inherited by all in here
+	z-index: 1000;
+
+
+	// scrolled transition
+	transition: .2s ease-out;
+
+	a {
+		text-decoration: none;
+		color: inherit;
+		text-transform: uppercase;
+	}
+
+	.nav-links {
+		display: flex;
+		list-style: none;
+
+
+		.nav-link {
+
+
+			// closing transition nav menu
+			transition: 
+				opacity .4s ease-in-out,
+				transform .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+				&:nth-of-type(2) {
+					transition-delay: .1s;
+				}
+				&:nth-of-type(3) {
+				transition-delay: .2s;
+				}
+				&:nth-of-type(4) {
+				transition-delay: .3s;
+				}
+
+			a {
+				margin: .2rem;
+				padding: .5rem .5rem;
+			}
+
+			a:hover {
+				border-radius: 10px;
+				background: rgba(225,225,225,0.2);
+
+			}
+		}
+	}
+
+
+	.menu-icon {
+		position: relative;
+		padding: 26px 10px;
+		cursor: pointer;
+
+		z-index: 1000;
+
+		display: none;
+
+
+		&__line {
+			display: block;
+			position: relative;
+			background: #0a0a1a;
+
+
+			height: 2px;
+			width: 20px;
+			border-radius: 5px;
+
+
+
+			&::before , &::after {
+				content: '';
+				position: absolute;
+
+				height: 100%;
+				width: 100%;
+
+				border-radius: 5px;
+
+
+				// visible
+				background: #0a0a1a;
+	
+				//transition
+				transition: background .8s ease;
+
+			}
+
+
+			&::before {
+				transform: translateY(-5px);
+			}
+			&::after {
+				transform: translateY(5px);
+			}
+		}
+	}
+
+
+
+	.menu-btn {
+
+		// checkbox display none
+		// display: none;
+
+		// screen reader
+		position: absolute;
+		top: -100px;
+
+		// indicator
+		&:focus ~ .menu-icon {
+
+			.menu-icon__line {
+			  &::before {
+				transform: translateY(-7px);
+			  }
+			  &::after {
+				transform: translateY(7px); 
+			  }
+			}
+		}
+	}
+
+
+
+	// setting a class to be toggled while scrolling using js
+	&.scrolled {
+		height: 50px;
+
+
+		// Apple nav-bar
+		// background: rgba(0,0,0,.5);
+
+		// comment out -->  nav menu blurry  otherwise it doesn't work
+		// box-shadow: inset 0 0 200px rgba(0,0,0,.5);
+		// backdrop-filter: blur(10px);
+
+
+		.menu-icon {
+			&__line , 
+			&__line::before , 
+			&__line::after {
+				background: #fff;	 
+			}
+		}
+
+	}
+
+
+	&.blurry {
+		box-shadow: inset 0 0 200px rgba(0,0,0,.5);
+		backdrop-filter: blur(10px);
+
+	}
+	&.back {
+
+		background: rgba(0,0,0,.3);
+
+	}
+
+
+
+
+
+	
+}
+

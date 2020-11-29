@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+
+
+
+    <link rel="stylesheet" href="hamburgers.css">
+
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+
+<body>
+
+
+    <nav class="navigation">
+        <a class="logo"><i class="fab fa-atlassian"><span class="logo-text"> Atlassian</span></i></a>
+
+        <button class="hamburger hamburger--vortex" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+        <div class="nav-links">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link" href="#">Booking</a>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        Home
+    </div>
+
+
+
+
+
+
+    <script>
+
+        const hamburger = document.querySelector('.hamburger')
+        const navLinks = document.querySelector('.nav-links')
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('is-active')
+            navLinks.classList.toggle('active')
+        })
+
+    </script>
+
+
+</body>
+
+</html>

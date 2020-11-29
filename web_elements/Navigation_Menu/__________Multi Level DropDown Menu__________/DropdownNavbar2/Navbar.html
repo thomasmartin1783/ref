@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dropdown Navbar</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">The Providers</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="#">Home</a></li>
+        <li  id="course" class="dropdown" ><a  href="#">Courses<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">SEO</a></li>
+          <li><a href="#">A.I</a></li>
+          <li><a href="#">M.L</a></li>
+          <li><a href="#">Graphics</a></li>
+          <li id="sub-dropdown" class="dropdown"><a href="#">web Design<span style="margin-left: 43px;" class="glyphicon glyphicon-chevron-right"></span> </a>
+        <ul id="sub-dropdown-menu" class="dropdown-menu">
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">Bootstrap 3</a></li>
+          <li><a href="#">JavaScript</a></li>
+          <li><a href="#">Angular</a></li>
+        </ul>
+      </li>
+          </li>
+        </ul>
+      </li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Policy</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+    background-color: rgba(29,29,31,0.7);
+
+    backdrop-filter: saturate(180%) blur(15px);
+
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.53);
+  
+
+
+#252937
+#ef3b7d
+14161a
+20 22 26
+63 63 99
+3f3f63
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "jasonc/centos7"
+end
+
+vagrant init jasonc/centos7
+vagrant up

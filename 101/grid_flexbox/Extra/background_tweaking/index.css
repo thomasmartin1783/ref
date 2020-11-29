@@ -1,0 +1,39 @@
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #0a0a1a;
+	color: white;
+}
+
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
+
+}
+.container div {
+	
+
+	height: 50vh;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.bg1 {
+	background: url('https://i.ibb.co/dBLbrRV/bg1.jpg');
+}
+  
+.bg2 {
+	background: url('https://i.ibb.co/Fb5jb3J/bg2.jpg');
+}
+  
+
+
+

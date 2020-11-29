@@ -1,0 +1,32 @@
+
+
+
+<main>
+	global $wpdb;
+	$result = $wpdb -> get_results("Select * from books");
+
+	<table>
+		<thead>
+			<tr>
+				<th>Book Title</th>
+				<th>Author Name</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<?php
+
+			forEach ($result as $book) { ?>
+
+				<tr>
+					<td><?php echo $book->title; ?></td>
+					<td><?php echo $book->author; ?></td>
+				</tr>
+
+			<?php } ?>
+		</tbody>
+
+	</table>
+
+
+</main>

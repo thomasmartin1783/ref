@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+
+</head>
+
+<body>
+
+
+
+    <div id="preloader-active">
+        <div class="preloader">
+            <div class="preloader-inner">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <!-- <img src="assets/img/logo/loder.png" alt=""> -->
+                    <i class="fighter fas fa-fighter-jet"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+    <script>
+        $(window).on('load', function () {
+            $('#preloader-active').delay(500).fadeOut('slow');
+            $('body').delay(450).css({
+                'overflow': 'visible'
+            });
+        });
+
+
+    </script>
+
+</body>
+
+</html>

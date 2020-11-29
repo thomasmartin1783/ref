@@ -1,0 +1,58 @@
+body{
+	font-family: monospace;
+	outline: none;
+	background-image: url(image.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+.navbar-inverse{
+	background-color: #2a84eb ;
+	border-color: transparent;
+}
+
+.navbar-inverse .navbar-brand{
+	color: #fff;
+	font-size: 30px;
+	margin-right: 40px;
+}
+
+#myNavbar .navbar-nav li a{
+	color: #fff;
+	font-size: 19px;
+	}
+#myNavbar #course{
+	transition: all 0.3s ease-in-out;
+}
+#myNavbar #course:hover{
+	background-color:#0751a6; 
+
+}	
+.dropdown-menu{
+  display: none;
+  position: absolute;
+  background-color: #f0f0f0;
+  box-shadow: 2px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+#sub-dropdown-menu{
+display: none;
+  position: absolute;
+  background-color: #f0f0f0;
+  margin-left: 186px;
+  margin-top: -26px;
+
+}
+
+#sub-dropdown-menu a , .dropdown-menu a {
+	color: #000 !important;
+		font-size: 16px !important;
+}
+
+.dropdown:hover .dropdown-menu {display: block;transition: all 0.5s ease-in-out;}
+
+.dropdown .dropdown-menu a:hover{background-color: #c9c7c7;}
+
+
+#sub-dropdown:hover #sub-dropdown-menu {display: block;}

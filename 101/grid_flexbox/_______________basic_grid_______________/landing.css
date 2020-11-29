@@ -1,0 +1,98 @@
+:root {
+	/* all the variables */
+	--staggering-delay: 500ms;
+}
+
+
+
+.landing_grid {
+	height: 95vh;
+	/* margin-bottom: 100px; */
+
+
+	/* full page layout */
+	display: grid;
+	gap: 1rem;
+	
+	/* grid structure */
+	grid-template-areas: 
+	'a  b  c'
+	'd  e  f'
+	'g  h  i';
+
+	/* grid-cell sizing */
+	grid-auto-rows: 25%;
+	/*grid-template-rows: repeat(3 , 25%) ; /*two rows*/
+	grid-template-columns: 25% auto 25%;/* three columns */
+	
+
+
+
+}
+
+/* taking care of footer and items inside */
+.footer {
+	height: 20vh;
+	background-color: rgb(10,8,20);
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+
+
+/* grid-area name assigning */
+.card:nth-child(1){
+	grid-area: a;
+}
+.card:nth-child(2){
+	grid-area: b;
+}
+.card:nth-child(3){
+	grid-area: c;
+}
+.card:nth-child(4){
+	grid-area: d;
+}
+.card:nth-child(5){
+	grid-area: e;
+}
+.card:nth-child(6){
+	grid-area: f;
+}
+.card:nth-child(7){
+	grid-area: g;
+}
+.card:nth-child(8){
+	grid-area: h;
+}
+.card:nth-child(9){
+	grid-area: i;
+}
+
+
+
+
+/* Responsive */
+@media screen and (max-width: 700px) {
+	.landing_grid {
+		height: auto;
+
+		grid-template-areas: 
+		'a'
+		'b'
+		'c'
+		'd'
+		'e'
+		'f'
+		'g'
+		'h'
+		'i';
+		/*grid-template-rows: repeat(9, 100vw);*/
+		grid-auto-rows: 50vw;
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	}
+
+	
+}

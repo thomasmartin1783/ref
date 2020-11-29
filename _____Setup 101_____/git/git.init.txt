@@ -1,0 +1,220 @@
+Nibir@LAPTOP-1TQM6OJH MINGW64 ~
+$ pwd
+/c/Users/Nibir
+
+
+Nibir@LAPTOP-1TQM6OJH MINGW64 ~
+$ cd desktop
+
+Nibir@LAPTOP-1TQM6OJH MINGW64 ~/desktop
+$ mkdir git
+
+Nibir@LAPTOP-1TQM6OJH MINGW64 ~/desktop
+$ pwd
+/c/Users/Nibir/desktop
+
+Nibir@LAPTOP-1TQM6OJH MINGW64 ~/desktop
+$ cd git
+
+
+
+Nibir@LAPTOP-1TQM6OJH MINGW64 ~/desktop/git
+$ git clone https://github.com/edwardclifton10/test101.git
+
+Cloning into 'test101'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 623 bytes | 3.00 KiB/s, done.
+
+
+
+Nibir@LAPTOP-1TQM6OJH MINGW64 ~/desktop/git
+$ ls
+test101/
+
+Nibir@LAPTOP-1TQM6OJH MINGW64 ~/desktop/git
+$ cd test101
+
+Nibir@LAPTOP-1TQM6OJH MINGW64 ~/desktop/git/test101 (master)
+$ ls
+README.md
+
+
+
+
+Nibir@LAPTOP-1TQM6OJH MINGW64 ~/desktop/git/test101 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+
+
+
+Nibir@LAPTOP-1TQM6OJH MINGW64 ~/desktop/git/test101 (master)    //open vscode
+$ code .
+
+
+
+Nibir@LAPTOP-1TQM6OJH MINGW64 ~/desktop/git/test101 (master)
+$ git status
+
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+
+
+
+
+
+Nibir@LAPTOP-1TQM6OJH MINGW64 ~/desktop/git/test101 (master)
+$ git add README.md
+
+
+
+Nibir@LAPTOP-1TQM6OJH MINGW64 ~/desktop/git/test101 (master)      //identity of who is commiting the changes... not need to be same as your github account
+$ git commit -m"adding git commands"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Nibir@LAPTOP-1TQM6OJH.(none)')
+
+
+
+
+
+//you only need to set this up only once...
+
+
+Nibir@LAPTOP-1TQM6OJH MINGW64 ~/desktop/git/test101 (master)
+$ git config --global user.name "edwardclifton10"
+
+Nibir@LAPTOP-1TQM6OJH MINGW64 ~/desktop/git/test101 (master)
+$ git config --global user.email "edwardclifton10@gmail.com"
+
+
+
+
+
+
+
+Nibir@LAPTOP-1TQM6OJH MINGW64 ~/desktop/git/test101 (master)
+$ git commit -m"adding git commands"
+
+[master 0a71237] adding git commands
+ 1 file changed, 5 insertions(+)
+
+
+
+
+
+Nibir@LAPTOP-1TQM6OJH MINGW64 ~/desktop/git/test101 (master)
+$ git push --set -upstream origin master                    //error here (--set -upstream) no space between them
+
+
+error: unknown switch `p'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --repo <repository>   repository
+    --all                 push all refs
+    --mirror              mirror all refs
+    -d, --delete          delete refs
+    --tags                push tags (can't be used with --all or --mirror)
+    -n, --dry-run         dry run
+    --porcelain           machine-readable output
+    -f, --force           force updates
+    --force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --recurse-submodules[=(check|on-demand|no)]
+                          control recursive pushing of submodules
+    --thin                use thin pack
+    --receive-pack <receive-pack>
+                          receive pack program
+    --exec <receive-pack>
+                          receive pack program
+
+
+
+    -u, --set-upstream    set upstream for git pull/status
+
+
+
+    --progress            force progress reporting
+    --prune               prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --follow-tags         push missing but relevant tags
+    --signed[=(yes|no|if-asked)]
+                          GPG sign the push
+    --atomic              request atomic transaction on remote side
+    -o, --push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+
+
+
+Nibir@LAPTOP-1TQM6OJH MINGW64 ~/desktop/git/test101 (master)
+$ git push --set-upstream origin master
+
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 358 bytes | 358.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/edwardclifton10/test101.git
+   5c5e208..0a71237  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+
+
+
+Nibir@LAPTOP-1TQM6OJH MINGW64 ~/desktop/git/test101 (master)
+$ git status
+
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+
+
+
+
+Nibir@LAPTOP-1TQM6OJH MINGW64 ~/desktop/git/test101 (master)
+$ git log
+
+
+commit 0a7123728e6f4a1220c14151506317036949882f (HEAD -> master, origin/master, origin/HEAD)
+Author: edwardclifton10 <edwardclifton10@gmail.com>
+Date:   Thu Mar 19 09:26:07 2020 -0600
+
+    adding git commands
+
+commit 5c5e20839461d744e6e20309ebf198619810318d
+Author: edwardclifton10 <62388578+edwardclifton10@users.noreply.github.com>
+Date:   Thu Mar 19 08:07:40 2020 -0600
+
+    Initial commit
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="./send-message/1.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="send-message-page">
+
+        <div class="cont-contactBtn">
+            <div class="cont-flip">
+                <div class="front">
+                    <a href="#" class="flip-btn btn-white flip">Send Message</a>
+                </div>
+                <div class="back">
+                    <a href="#" class="flip close"></a>
+                    <form class="flip-contact-form" action="/send-message" method="POST">
+                        <input class="gutter" type="text" placeholder="Name">
+                        <input type="text" placeholder="Company">
+                        <input class="gutter" type="text" placeholder="Telephone">
+                        <input type="text" placeholder="Email">
+                        <textarea name="" id="" placeholder="Leave a message"></textarea>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./send-message/1.js"></script>
+
+</body>
+
+</html>

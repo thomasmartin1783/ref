@@ -1,0 +1,102 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #0a0a1a;
+
+}
+
+.box {
+	border: 2px solid blue;
+	/* background-color: gray; */
+	height: 300px;
+	width: 300px;
+
+	position: relative;
+	
+
+	animation-name: myanimation;
+	animation-duration: 4s;
+	animation-iteration-count: 
+	3;
+	/* infinite; */
+	animation-delay: 1s;
+	animation-direction: 
+	/* reverse; */
+	alternate;
+	animation-timing-function: 
+	linear;
+	animation-fill-mode: 
+	forwards;
+	/* backwards; */
+	
+}
+
+@keyframes myanimation {
+	0% {
+		left: 0px; 
+		top: 0px;
+		border-radius:  0 0 0 0;
+	}
+
+	25% {
+		background-color: hsl(225,71%,80%); 
+		left: 300px; 
+		top: 0px; 
+		border-radius:  50% 0 0 0;}
+
+	50% {
+		background-color: royalblue; 
+		left: 300px; 
+		top: 300px;
+		border-radius:  50% 50% 0 0;
+	}
+
+	75% {
+		background-color: blue; 
+		left: 0px; 
+		top: 300px;
+		border-radius:  50% 50% 50% 0;
+	}
+
+	100% {
+		background-color: #0a0a1a; 
+		left: 0px; 
+		top: 0px; 
+		border-radius:  50% 50% 50% 50%;
+	}
+
+}
+
+
+
+.box2 {
+	border: 2px solid blue;
+	/* background-color: gray; */
+	height: 300px;
+	width: 300px;
+
+	/* position: relative; */
+	/* by default box2 position is STATIC. so left and top property is not going to be applied. But if the position is RELATIVE, then it will be applied; */
+	
+	
+
+	animation-name: myanimation;
+	animation-duration: 4s;
+	animation-iteration-count: 
+	3;
+	/* infinite; */
+	animation-delay: 1s;
+	animation-direction: 
+	/* reverse; */
+	alternate;
+	animation-timing-function: 
+	linear;
+	animation-fill-mode: 
+	/* forwards; */
+	backwards;
+	
+}

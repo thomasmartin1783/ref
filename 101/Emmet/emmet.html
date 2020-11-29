@@ -1,0 +1,409 @@
+ctrl + /
+
+<!--  -->
+
+
+
+
+#1
+
+
+type div and then press TAB and you will see emmet in action.
+
+Go to settings and type emmet 
+
+Emmet: Trigger Expansion On TAB
+turn this feature on
+
+
+
+#2
+
+section.wrapper>article.post>h1.title>p.description>span.red+span.blue
+
+
+<section class="wrapper">
+	<article class="post">
+		<h1 class="title">
+			<p class="description">
+				<span class="red"></span>
+				<span class="blue"></span>
+			</p>
+		</h1>
+	</article>
+</section>
+
+
+#3
+
+table>(thead>tr>th*3)+(tbody>tr>td*3)+(tfoot>tr*3>td*3)
+
+
+<table>
+	<thead>
+		<tr>
+			<th></th>
+			<th></th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</tfoot>
+</table>
+
+
+
+
+#4
+
+p#desc.post
+
+<p id="desc" class="post"> 
+
+</p>
+
+
+
+#block.three
+div doesn't need to specify the abbreviation
+
+<div id="block" class="three"></div>
+
+.
+
+<div class=""></div>
+
+
+#.
+
+<div id="" class=""></div>
+
+
+
+
+#5   children
+
+>
+
+ul>li
+
+
+
+#6   sibling
+
+
++
+
+h1+p
+
+
+
+#7   multiply
+
+*
+
+li*3
+
+
+
+#8   Lorem Ipsum
+
+lorem
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ab obcaecati quasi quam unde possimus voluptatum, praesentium voluptates atque suscipit illum amet, voluptate repellendus quis velit quisquam commodi porro placeat.
+
+
+lorem5
+
+Lorem ipsum dolor sit amet.
+
+lorem1
+Lorem.
+
+lorem2
+Lorem, ipsum.
+
+
+p>lorem5
+
+<p>Lorem ipsum dolor sit amet.</p>
+
+
+ul>li*4>lorem1
+
+<ul>
+	<li>Lorem.</li>
+	<li>Minima?</li>
+	<li>Non.</li>
+	<li>Ullam!</li>
+</ul>
+
+
+
+
+#9   Climbing up
+
+^   one level up
+^^  two level up
+.
+.
+.
+
+
+ul>li*2^p
+<ul>
+	<li></li>
+	<li></li>
+</ul>
+<p></p>
+
+
+section>h1>span^footer
+
+table>thead>tr>td*2^^tbody>tr>td*2
+
+<table>
+	<thead>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+
+
+
+
+#10   Grouping 
+
+
+instead of using climbing operator use() to group the elements of same level
+
+table>thead>tr>td*2^^tbody>tr>td*2
+
+table>(thead>tr>td*2)+(tbody>tr>td*2)
+
+<table>
+	<thead>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+
+
+
+section>(ol>li*3)+(article>p)
+
+<section>
+	<ol>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ol>
+	<article>
+		<p></p>
+	</article>
+</section>
+
+
+
+table>(thead>tr>td*2)+(tbody>tr>td*2)+(tfoot>tr>td*2)
+
+<table>
+	<thead>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+	</tfoot>
+</table>
+
+
+
+
+
+
+#11   Attributes
+
+img
+<img src="" alt="">
+
+img[title]
+<img src="" alt="" title="">
+
+
+img[title="My Image"]
+<img src="" alt="" title="My Image">
+
+
+div[title="My div"]
+<div title="My div"></div>
+
+
+div[data-attr="Click"]
+<div data-attr="Click"></div>
+
+
+input
+<input type="text">
+
+
+input[type="checkbox"]
+<input type="checkbox">
+
+
+input:
+choose the needed option from the list
+
+<input type="checkbox" name="" id="">
+<input type="radio" name="" id="">
+
+
+input#inp[type="checkbox"][data-attr="input"]
+<input type="checkbox" id="inp" data-attr="input">
+
+
+
+
+
+#12   Numbering
+
+
+$
+
+nav>ul>li.nav-item*5
+<nav>
+	<ul>
+		<li class="nav-item"></li>
+		<li class="nav-item"></li>
+		<li class="nav-item"></li>
+		<li class="nav-item"></li>
+		<li class="nav-item"></li>
+	</ul>
+</nav>
+
+
+
+nav>ul>li.nav-item$*5
+
+<nav>
+	<ul>
+		<li class="nav-item1"></li>
+		<li class="nav-item2"></li>
+		<li class="nav-item3"></li>
+		<li class="nav-item4"></li>
+		<li class="nav-item5"></li>
+	</ul>
+</nav>
+
+
+
+ul>li.nav-item${The number of the item is $}*2
+
+<ul>
+	<li class="nav-item1">The number of the item is 1</li>
+	<li class="nav-item2">The number of the item is 2</li>
+</ul>
+
+
+
+
+p{This is the paragraph number $}*5
+
+
+<p>This is the paragraph number 1</p>
+<p>This is the paragraph number 2</p>
+<p>This is the paragraph number 3</p>
+<p>This is the paragraph number 4</p>
+<p>This is the paragraph number 5</p>
+
+
+
+div{This is the div number $$}*3
+
+<div>This is the div number 01</div>
+<div>This is the div number 02</div>
+<div>This is the div number 03</div>
+
+
+
+*************************************************
+
+ol>li.nav-item$@3*4
+
+<ol>
+	<li class="nav-item3"></li>
+	<li class="nav-item4"></li>
+	<li class="nav-item5"></li>
+	<li class="nav-item6"></li>
+</ol>
+
+
+************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,203 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+body {
+  /* background-color: #f6ede5; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.flip-btn {
+  font-family: 'Raleway', sans-serif;
+}
+
+.send-message-page {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: no-repeat center url(bg.jpg);
+  background-size: cover;
+} 
+
+
+.cont-contactBtn {
+  height: 360px;
+  margin: 0 auto;
+  width: 575px;
+  position: relative;
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -o-perspective: 800px;
+  perspective: 800px;
+}
+.cont-contactBtn .cont-flip {
+  position: absolute;
+  -webkit-transition: -webkit-transform 0.5s;
+  -moz-transition: -moz-transform 0.5s;
+  -o-transition: -o-transform 0.5s;
+  transition: transform 0.5s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+.cont-contactBtn .cont-flip .front{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  /* background-color: rgba(255,77,84,1); */
+  background-color: rgba(225,225,225,.2);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+}
+
+
+
+
+.cont-contactBtn .cont-flip .back {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+
+  background-color: rgba(225,225,225,.2);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+
+
+
+
+
+.cont-contactBtn .cont-flip.flipped {
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+.cont-contactBtn .flip-contact-form {
+  padding: 0 10%;
+  margin-top: 50px;
+  width: 80%;
+}
+.cont-contactBtn .flip-contact-form input, .cont-contactBtn .flip-contact-form textarea {
+  border: 1px solid #808080;
+  font-size: 12px;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+.cont-contactBtn .flip-contact-form input[type="text"] {
+  background-color: rgba(225,225,225,.3);
+  backdrop-filter: blur(100px);
+  border-radius: 5px;
+  float: left;
+  margin-bottom: 8px;
+  padding-left: 3%;
+}
+.cont-contactBtn .flip-contact-form .gutter {
+  margin-right: 2.8%;
+}
+.cont-contactBtn .flip-contact-form textarea {
+  background-color: rgba(225,225,225,.3);
+  backdrop-filter: blur(100px);
+  border-radius: 5px;
+  height: 106px;
+  padding-left: 3%;
+  margin-bottom: 22px;
+  width: 96.2%;
+}
+.cont-contactBtn .flip-contact-form input[type="submit"] {
+  background-color: #ff4d54;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  height: 45px;
+  width: 100%;
+  max-width: 93px;
+  text-align: center;
+}
+.cont-contactBtn .close {
+  display: block;
+  height: 19px;
+  width: 19px;
+  background-image: url("https://i.imgur.com/WoKg12q.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 15px;
+  right: 3%;
+}
+
+.flip-btn {
+  border: 3px #fff solid;
+  color: #fff;
+  border-radius: 5px;
+  display: block;
+  font-size: 15px;
+  font-weight: normal;
+  margin: 0 auto;
+  max-width: 280px;
+  padding: 1rem 0;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 80%;
+}
+
+
+
+
+@media screen and (min-width: 810px) {
+  .cont-contactBtn .flip-contact-form input[type="text"] {
+    width: 44.9%;
+  }
+
+}
+
+
+@media screen and (max-width: 800px) {
+  .cont-contactBtn {
+    height: 60vh;
+    width: 70vw;
+  }
+  .cont-contactBtn .flip-contact-form input[type="text"] {
+    width: 96.2%;
+  }
+  
+}
+
+
+@media screen and (max-width: 500px) {
+  .cont-contactBtn {
+    height: 60vh;
+    width: 70vw;
+  }
+}

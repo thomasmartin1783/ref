@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TicTacToe</title>
+
+	<style>
+	
+		body {
+			background: #0a0a1a;
+		}
+		table {
+			margin: auto;
+		}
+
+		td {
+		    /*background: pink;*/
+			height: 200px;
+			width: 200px;
+		}
+
+		.vertical {
+			border-right: 2px solid gray;
+			border-left: 2px solid gray;	
+		}
+
+		.horizontal {
+			border-top: 2px solid gray;
+			border-bottom: 2px solid gray;
+		}
+
+	</style>
+</head>
+<body>
+
+	<table>
+		<tr>
+			<td></td>
+			<td class="vertical"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="horizontal"></td>
+			<td class="vertical horizontal"></td>
+			<td class="horizontal"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td class="vertical"></td>
+			<td></td>
+		</tr>
+	</table>
+	
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <link rel="stylesheet" href="1.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+
+
+
+</head>
+
+<body>
+
+
+    <form action="#" method="post">
+
+        <ul>
+            <li id="intro" class="open">
+                <h2>A Form of Fantasy</h2>
+                <p class="quote">The gift of fantasy has meant more to me than my talent for absorbing positive
+                    knowledge -
+                    Albert Einstein</p>
+                <a class="button" href="#single-choice">Begin the quest <span>&#9997;</span></a>
+            </li>
+            <li id="single-choice">
+                <p style="margin-bottom:1em; color:#fff;">Which is better?</p>
+
+                <div>
+                    <span>
+                        <input id="Field1_0" name="Field1" type="radio" class="field radio" value="Fantasty"
+                            checked="checked" />
+                        <label class="choice" for="Field1_0">
+                            Fantasty
+                        </label>
+                    </span>
+                    <span>
+                        <input id="Field1_1" name="Field1" type="radio" class="field radio" value="Sci-Fi" />
+                        <label class="choice" for="Field1_1">Science-Fi</label>
+                    </span>
+                    <span>
+                        <input id="Field1_2" name="Field1" type="radio" class="field radio"
+                            value="Don&#039;t make me choose!" />
+                        <label class="choice" for="Field1_2">
+                            Don't make me choose!
+                        </label>
+                    </span>
+                    <span>
+                        <input id="Field1_3" name="Field1" type="radio" class="field radio"
+                            value="I don&#039;t like either" />
+                        <label class="choice" for="Field1_3">
+                            I don't like either
+                        </label>
+                    </span>
+                    <a class="button" href="#multiple-text">Next &rarr;</a>
+
+                </div>
+
+            </li>
+
+            <li id="multiple-text">
+
+                <p style="margin-bottom:1.5em; color:#fff;">How much would you donate to a Kickstarter to bring back
+                    Firefly?</p>
+
+
+                <span class="symbol">$</span>
+                <span>
+                    <input id="Field2" name="Field2" type="text" class="field text currency nospin" value=""
+                        size="10" />
+                </span>
+                <span class="symbol radix">.</span>
+                <span class="cents">
+                    <input id="Field2-1" name="Field2-1" type="text" class="field text nospin" value="00" size="2"
+                        maxlength="2" />
+                </span><br>
+                <a class="button" href="#multiple-choice">Next &rarr;</a>
+
+
+            </li>
+            <li id="multiple-choice" class="likert">
+
+                <p style="margin-bottom:1.5em; color:#fff;">Rate the Start Movies</p>
+
+                <table cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <td>Didn't Like</td>
+                            <td>Meh'Lo</td>
+                            <td>Kinda Liked</td>
+                            <td>Loved!</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="statement3">
+                            <th>
+                                <label for="Field3">Episode I - The Phantom Menace</label>
+                            </th>
+                            <td title="Didn&#039;t Like At All">
+                                <input id="Field3_1" name="Field3" type="radio" value="Didn&#039;t Like At All" />
+                                <label for="Field3_1">1</label>
+                            </td>
+                            <td title="Meh">
+                                <input id="Field3_2" name="Field3" type="radio" value="Meh" />
+                                <label for="Field3_2">2</label>
+                            </td>
+                            <td title="Kinda Liked">
+                                <input id="Field3_3" name="Field3" type="radio" value="Kinda Liked" />
+                                <label for="Field3_3">3</label>
+                            </td>
+                            <td title="Loved!">
+                                <input id="Field3_4" name="Field3" type="radio" value="Loved!" />
+                                <label for="Field3_4">4</label>
+                            </td>
+                        </tr>
+                        <tr class="alt statement4">
+                            <th>
+                                <label for="Field4">Episode II - Attack of the Clones</label>
+                            </th>
+                            <td title="Didn&#039;t Like At All">
+                                <input id="Field4_1" name="Field4" type="radio" value="Didn&#039;t Like At All" />
+                                <label for="Field4_1">1</label>
+                            </td>
+                            <td title="Meh">
+                                <input id="Field4_2" name="Field4" type="radio" value="Meh" />
+                                <label for="Field4_2">2</label>
+                            </td>
+                            <td title="Kinda Liked">
+                                <input id="Field4_3" name="Field4" type="radio" value="Kinda Liked" />
+                                <label for="Field4_3">3</label>
+                            </td>
+                            <td title="Loved!">
+                                <input id="Field4_4" name="Field4" type="radio" value="Loved!" />
+                                <label for="Field4_4">4</label>
+                            </td>
+                        </tr>
+                        <tr class="statement5">
+                            <th><label for="Field5">Episode III - Revenge of the Sith</label></th>
+                            <td title="Didn&#039;t Like At All">
+                                <input id="Field5_1" name="Field5" type="radio" value="Didn&#039;t Like At All" />
+                                <label for="Field5_1">1</label>
+                            </td>
+                            <td title="Meh">
+                                <input id="Field5_2" name="Field5" type="radio" value="Meh" />
+                                <label for="Field5_2">2</label>
+                            </td>
+                            <td title="Kinda Liked">
+                                <input id="Field5_3" name="Field5" type="radio" value="Kinda Liked" />
+                                <label for="Field5_3">3</label>
+                            </td>
+                            <td title="Loved!">
+                                <input id="Field5_4" name="Field5" type="radio" value="Loved!" />
+                                <label for="Field5_4">4</label>
+                            </td>
+                        </tr>
+                        <tr class="alt statement6">
+                            <th>
+                                <label for="Field6">Episode IV - A New Hope</label>
+                            </th>
+                            <td title="Didn&#039;t Like At All">
+                                <input id="Field6_1" name="Field6" type="radio" value="Didn&#039;t Like At All" />
+                                <label for="Field6_1">1</label>
+                            </td>
+                            <td title="Meh">
+                                <input id="Field6_2" name="Field6" type="radio" value="Meh" />
+                                <label for="Field6_2">2</label>
+                            </td>
+                            <td title="Kinda Liked">
+                                <input id="Field6_3" name="Field6" type="radio" value="Kinda Liked" />
+                                <label for="Field6_3">3</label>
+                            </td>
+                            <td title="Loved!">
+                                <input id="Field6_4" name="Field6" type="radio" value="Loved!" />
+                                <label for="Field6_4">4</label>
+                            </td>
+                        </tr>
+                        <tr class="statement7">
+                            <th>
+                                <label for="Field7">Episode V - The Empire Strikes</label>
+                            </th>
+                            <td title="Didn&#039;t Like At All">
+                                <input id="Field7_1" name="Field7" type="radio" value="Didn&#039;t Like At All" />
+                                <label for="Field7_1">1</label>
+                            </td>
+                            <td title="Meh">
+                                <input id="Field7_2" name="Field7" type="radio" value="Meh" />
+                                <label for="Field7_2">2</label>
+                            </td>
+                            <td title="Kinda Liked">
+                                <input id="Field7_3" name="Field7" type="radio" value="Kinda Liked" />
+                                <label for="Field7_3">3</label>
+                            </td>
+                            <td title="Loved!">
+                                <input id="Field7_4" name="Field7" type="radio" value="Loved!" />
+                                <label for="Field7_4">4</label>
+                            </td>
+                        </tr>
+                        <tr class="alt statement8">
+                            <th>
+                                <label for="Field8">Episode VI - Return of the Jedi</label>
+                            </th>
+                            <td title="Didn&#039;t Like At All">
+                                <input id="Field8_1" name="Field8" type="radio" value="Didn&#039;t Like At All" />
+                                <label for="Field8_1">1</label>
+                            </td>
+                            <td title="Meh">
+                                <input id="Field8_2" name="Field8" type="radio" value="Meh" />
+                                <label for="Field8_2">2</label>
+                            </td>
+                            <td title="Kinda Liked">
+                                <input id="Field8_3" name="Field8" type="radio" value="Kinda Liked" />
+                                <label for="Field8_3">3</label>
+                            </td>
+                            <td title="Loved!">
+                                <input id="Field8_4" name="Field8" type="radio" value="Loved!" />
+                                <label for="Field8_4">4</label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <a class="button" href="#select">Next &rarr;</a>
+
+            </li>
+            <li id="select">
+
+                <p style="margin-bottom:1.5em; color:#fff;">Are you caught up on Game of Thrones?</p>
+
+                <div class="select">
+                    <select id="Field104" name="Field104" class="field select medium" tabindex="31">
+                        <option value="Never seen it" selected="selected">
+                            Never seen it
+                        </option>
+                        <option value="Yep, totally caught up">
+                            Yep, totally caught up
+                        </option>
+                        <option value="I&#039;ve seen some but I&#039;m not caught up">
+                            I've seen some but I'm not caught up
+                        </option>
+                    </select>
+                </div>
+                <a class="button" href="#text">Next &rarr;</a>
+
+
+            </li>
+
+            <li id="text">
+
+
+                <p style="margin-bottom:1.5em; color:#fff;"> What is your favorite Fantasty or Sci-Fi movie of all time?
+                </p>
+
+                <label class="desc" id="title107" for="Field107">
+                </label>
+                <div>
+                    <input id="Field107" name="Field107" type="text" class="field text medium" value="" maxlength="255"
+                        tabindex="32" onkeyup="" />
+                </div>
+
+                <a class="button" href="#info">Next &rarr;</a>
+
+
+
+
+            </li>
+
+            <li id="info">
+
+
+                <p style="margin-bottom:1.5em; color:#fff;">Personal Information</p>
+
+                <span>
+                    <input id="Field105" name="Field105" type="text" class="field text fn" value="" size="15"
+                        tabindex="33" placeholder="First Name" style="margin-right:1.5em">
+                </span>
+                <span>
+                    <input id="Field106" name="Field106" type="text" class="field text ln" value="" size="14"
+                        tabindex="34" placeholder="Last Name" style="margin-right:1.5em">
+
+                </span>
+                <br><br><br><br>
+                <div>
+                    <input id="Field110" name="Field110" type="email" spellcheck="false" class="field text medium"
+                        value="" maxlength="255" size="35" placeholder="Email Address" style="margin-right:1.5em">
+                </div>
+                <br><br><br>
+
+                <div>
+                    <input id="Field117" name="Field117" type="url" class="field text medium" value="" maxlength="255"
+                        tabindex="36" size="35" placeholder="http://" style="margin-right:1.5em" />
+                </div>
+                <br><br>
+
+                <button type="submit">
+                    <a class="button">Submit <span style="font-size:25px">&#9996;<span></a>
+                </button>
+
+
+
+            </li>
+        </ul>
+
+
+    </form>
+
+    <script src="1.js"></script>
+</body>
+
+</html>

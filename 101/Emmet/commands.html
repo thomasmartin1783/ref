@@ -1,0 +1,280 @@
+
+
+
+
+#1    Wrap With Abbreviation 
+
+
+
+<ul>
+	<li></li>
+	<li></li>
+</ul>
+
+
+<nav>
+	<ul>
+		<li></li>
+		<li></li>
+	</ul>
+</nav>
+
+
+highlight the whole area you want to Wrap
+go to view --> command palette  or use shortcut shift+ctrl+p --> type wrap with abbreviation --> type the element you want to wrap up with -->  Enter 
+
+
+
+<p>
+	Lorem ipsum dolor sit amet.
+</p>
+
+
+<section>
+	<h1></h1>
+	<div></div>
+</section>
+
+
+
+*******************************************************
+
+
+id and class
+in this case, type   div#one.two   in the command box
+
+<div id="one" class="two">
+	Lorem ipsum dolor sit.
+</div>
+
+
+*******************************************************
+
+
+
+Assign a keyboard shortcut for this 
+
+File --> preferences --> Keyboard Shortcuts (ctrl k ctrl s) -->  find the command --> press + --> Escape / Enter
+
+
+
+
+
+
+
+#2    Wrap individual  lines with abbreviation
+
+
+a*2>{Link $}
+
+
+<li><a href="">Link 1</a></li>
+<li><a href="">Link 2</a></li>
+
+
+shift + ctrl + p  -->  Wrap individual  lines with abbreviation  -->     li*  (without * it doesn't work)
+
+a*3
+<a href=""></a>
+<a href=""></a>
+<a href=""></a>
+
+
+use ul>li*    in the command box
+
+
+<ul>
+	<li><a href=""></a></li>
+	<li><a href=""></a></li>
+	<li><a href=""></a></li>
+</ul>
+
+
+
+
+a*2
+<a href=""></a>
+<a href=""></a>
+
+ul#list>li.list-item*
+
+<ul id="list">
+	<li class="list-item"><a href=""></a></li>
+	<li class="list-item"><a href=""></a></li>
+</ul>
+
+
+
+
+
+
+
+
+#3    Update Tag
+
+
+section>h1+p
+<section>
+	<h1></h1>
+	<p></p>
+</section>
+
+want to update section Tag
+
+
+select the tag (section)  -->  shift + ctrl + p  -->  type Update Tag  -->  type the updated tag(article)
+
+
+<article>
+	<h1></h1>
+	<p></p>
+</article>
+
+
+*******   id and class doesn't work in this 
+article#one.two 
+
+<article#one.two>
+	<h1></h1>
+</article#one.two>
+
+*******   and if you already have id and class specified then don't worry you can change the tag without changing them
+
+
+<article  id="one" class="two">
+	<h1></h1>
+	<p></p>
+</article>
+
+
+<section  id="one" class="two">
+	<h1></h1>
+	<p></p>
+</section>
+
+
+
+ol>li*4
+
+<ol>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+</ol>
+
+
+select (mark with the cursor) li on the first one -->  press alt and click (just click) inside the second li  -->  shift+ctrl+p  -->  update -->  type the updated command  -->  Enter
+
+(udemy module 2   emmet update tag    2:56)
+
+<dl>
+	<dt></dt>
+	<dd></dd>
+	<dt></dt>
+	<dd></dd>
+</dl>
+
+
+
+
+
+
+#3    Remove Tag
+
+
+div>section>p*5>lorem10
+
+<div>
+	<section>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, voluptatem!</p>
+		<p>Culpa ut voluptate consequuntur dolores, architecto quod. Impedit, sed error.</p>
+		<p>Provident cumque ipsam temporibus dolorem perspiciatis vero saepe iste sit.</p>
+		<p>Dolorem veritatis autem deserunt blanditiis libero nisi, exercitationem quia velit.</p>
+		<p>Eaque natus aliquid, accusamus iste minus autem adipisci explicabo in!</p>
+	</section>
+</div>
+
+
+
+remove div   emmet remove tag
+
+
+	<section>
+		<p>Lorem ipsum dolor sit amet.</p>
+		<p>Eum ipsum cumque commodi aliquam.</p>
+		<p>Delectus excepturi id vero! In?</p>
+		<p>Natus minima omnis ab fugiat.</p>
+		<p>Esse odit excepturi at provident!</p>
+	</section>
+
+remove
+
+
+
+
+
+
+
+#4    Emmet:   Go to matching pair
+
+
+
+#5     Merge and Evaluate
+
+
+<ul>
+	<li>Lorem, ipsum.</li>
+	<li>Maxime, neque.</li>
+</ul>
+
+
+<ul><li>Lorem, ipsum.</li><li>Maxime, neque.</li></ul>
+
+
+
+
+<div>10+5</div>
+
+Evaluate math expression
+
+<div>15</div>
+
+
+
+<div>2*5+(100/10)</div>
+<div>20</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
