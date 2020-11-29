@@ -1,0 +1,23 @@
+{
+  "name": "greensock-101",
+  "version": "1.0.0",
+  "description": "[GreenSock 101](https://ihatetomatoes.net/store/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ihatetomatoes/greensock-101.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ihatetomatoes/greensock-101/issues"
+  },
+  "homepage": "https://github.com/Ihatetomatoes/greensock-101#readme",
+  "dependencies": {
+    "gsap": "^3.5.0"
+  }
+}
