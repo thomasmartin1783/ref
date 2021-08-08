@@ -1,3 +1,28 @@
+
+
+==============================================
+|                                            |
+|                                            |
+|                  GitHub                    |
+|                                            |
+|                                            |
+==============================================
+
+
+
+
+it will prompt for individual local different username and password
+
+
+git config --local credential.helper ""
+git push origin master
+
+
+
+
+
+
+
 Nibir@LAPTOP-1TQM6OJH MINGW64 ~
 $ pwd
 /c/Users/Nibir
